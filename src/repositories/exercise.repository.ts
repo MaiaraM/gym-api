@@ -1,5 +1,11 @@
 import Exercise from '../models/exercise.model';
 
+
+interface CreateExerciseDTO {
+  name: string;
+  member: string;
+}
+
 class ExerciseRepository {
   private exercises: Exercise[];
 
@@ -11,8 +17,8 @@ class ExerciseRepository {
     return this.exercises;
   }
 
-  public create({ name, member }:): Exercise {
-    const newExercise = new Exercise({ name, member });
+  public create({ name, member }: CreateExerciseDTO): Exercise {
+    const newExercise = new Exercise(name, member);
 
     this.exercises.push(newExercise);
 

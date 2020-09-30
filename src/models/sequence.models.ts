@@ -2,13 +2,13 @@ import BaseModel from "./base.model";
 import Exercise from "./exercise.model";
 
 class Sequence extends BaseModel {
-  private exercise: Exercise;
+  exercise: Exercise;
 
-  private repetitions: number;
+  repetitions: number;
 
-  private sequence: number;
+  sequence: number;
 
-  private weight: number;
+  weight: number;
 
   constructor({ exercise, repetitions, sequence, weight }: Sequence) {
     super();

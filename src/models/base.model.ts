@@ -2,7 +2,7 @@ import { uuid } from "uuidv4";
 
 class BaseModel {
   id: string;
-  createAt: Date;
+  createAt?: Date;
   deletedAt?: Date;
 
 
@@ -10,6 +10,7 @@ class BaseModel {
     this.id = uuid();
     this.createAt = new Date();
   }
+
 }
 
 export default BaseModel;

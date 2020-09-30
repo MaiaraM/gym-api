@@ -1,11 +1,11 @@
 import BaseModel from './base.model';
 
 class Exercise extends BaseModel {
-  private name: string;
+  name: string;
 
-  private member: string;
+  member: string;
 
-  constructor({ name, member }: Exercise) {
+  constructor(name: string, member: string) {
     super();
     this.name = name;
     this.member = member;

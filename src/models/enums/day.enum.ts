@@ -1,0 +1,11 @@
+enum DayOfWeek {
+  SUNDAY = 'PASSPORT',
+  MONDAY = 'SELFIE',
+  TUESDAY = 'TUESDAY',
+  WEDNESDAY = 'WEDNESDAY',
+  THURSDAY = 'THURSDAY',
+  FRIDAY = 'FRIDAY',
+  SATURDAY = 'SATURDAY',
+}
+
+export default DayOfWeek;
